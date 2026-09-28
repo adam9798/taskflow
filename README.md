@@ -6,7 +6,7 @@ their own personal to-do list. Each user only sees and edits their own tasks.
 ## Live Demo
 
 - **Deployed app:** https://dynamic-melba-f2b7de.netlify.app/
-- **Demo video:** _(add your unlisted YouTube link here)_
+- **Demo video:** https://youtu.be/QhxK7901DN8
 
 ## What It Does
 
