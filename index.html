@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TaskFlow — Simple Task Manager</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>TaskFlow</h1>
+    <div id="userBar" class="hidden">
+      <span id="userEmail"></span>
+      <button id="logoutBtn" class="btn btn-secondary">Log out</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- AUTH VIEW -->
+    <section id="authView" class="card auth-card">
+      <div class="tabs">
+        <button id="showLoginTab" class="tab active">Log In</button>
+        <button id="showRegisterTab" class="tab">Register</button>
+      </div>
+
+      <form id="loginForm" class="auth-form">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" required placeholder="you@example.com" />
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required placeholder="••••••••" />
+        <button type="submit" class="btn btn-primary">Log In</button>
+        <p id="loginError" class="error"></p>
+      </form>
+
+      <form id="registerForm" class="auth-form hidden">
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" required placeholder="you@example.com" />
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" required placeholder="At least 6 characters" minlength="6" />
+        <button type="submit" class="btn btn-primary">Create Account</button>
+        <p id="registerError" class="error"></p>
+        <p id="registerSuccess" class="success"></p>
+      </form>
+    </section>
+
+    <!-- APP VIEW -->
+    <section id="appView" class="card hidden">
+      <h2>My Tasks</h2>
+
+      <form id="taskForm" class="task-form">
+        <input type="text" id="taskTitle" placeholder="What do you need to do?" required />
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="taskList" class="task-list"></ul>
+      <p id="emptyState" class="empty-state hidden">No tasks yet. Add one above!</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

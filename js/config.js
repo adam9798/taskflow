@@ -1,0 +1,4 @@
+// Fill these in with your own Supabase project's values.
+// Find them in your Supabase dashboard under Project Settings > API.
+const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
+const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
