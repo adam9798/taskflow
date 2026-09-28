@@ -5,7 +5,7 @@ their own personal to-do list. Each user only sees and edits their own tasks.
 
 ## Live Demo
 
-- **Deployed app:** _(add your Netlify link here after deploying)_
+- **Deployed app:** https://dynamic-melba-f2b7de.netlify.app/
 - **Demo video:** _(add your unlisted YouTube link here)_
 
 ## What It Does
@@ -67,6 +67,5 @@ their own personal to-do list. Each user only sees and edits their own tasks.
 
 ## Deployment
 
-Deployed as a static site on Netlify: drag-and-drop the project folder into
-[Netlify Drop](https://app.netlify.com/drop), or connect the GitHub repo for
-automatic deploys.
+Deployed as a static site on Netlify at https://dynamic-melba-f2b7de.netlify.app/
+via drag-and-drop deploy ([Netlify Drop](https://app.netlify.com/drop)).
